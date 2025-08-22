@@ -1,5 +1,5 @@
-import { algoliasearch } from '../../scripts/algolia/algoliasearch.js';
-import { instantsearch } from '../../scripts/algolia/instantsearch.js';
+import '../../scripts/algolia/algoliasearch.js';
+import '../../scripts/algolia/instantsearch.js';
 
 export default function decorate(block) {
     const greeting = document.createElement('div');
