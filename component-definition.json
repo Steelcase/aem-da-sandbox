@@ -177,6 +177,16 @@
               "columns": 1
             }
           }
+        },
+        {
+          "title": "Aloglia Search",
+          "id": "algolia-search",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1
+            }
+          }
         }
       ]
     }

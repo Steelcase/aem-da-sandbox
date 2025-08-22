@@ -252,5 +252,16 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "algolia-search",
+    "fields": [
+      {
+        "component": "text",
+        "name": "test",
+        "label": "Test",
+        "valueType": "string"
+      }
+    ]
   }
 ]
