@@ -4,10 +4,11 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      ALGOLIA_API_KEY: ${{ secrets.MYTESTSECRET}}
     steps:
-    - run: echo "Algolia API Key $ALGOLIA_API_KEY"
+    - name: Run JavaScript file with secret
+        run: node blocks/helloworld/helloworld.js
+        env:
+          ALGOLIA_API_KEY: ${{ secrets.MYTESTSECRET }} # Pass as environment variable to scriptrun: echo "Algolia API Key $ALGOLIA_API_KEY"
     - uses: actions/checkout@v4
     - name: Use Node.js 20
       uses: actions/setup-node@v4
