@@ -8,6 +8,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run lint
+        
       - name: Use secret in environment variable
         run: echo "My API Key: $ALGOLIA_API_KEY"
         env:
