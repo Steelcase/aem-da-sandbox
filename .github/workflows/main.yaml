@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run JavaScript file with secret
-        run: node blocks/helloworld/helloworld.js
+        run: node helloworld.js
         env:
           ALGOLIA_API_KEY: ${{ secrets.MYTESTSECRET }} # Pass as environment variable to scriptrun: echo "Algolia API Key $ALGOLIA_API_KEY"
     - uses: actions/checkout@v4
